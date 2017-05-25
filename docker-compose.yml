@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+
+  atomic.apache:
+    image: ambientum/php:7.0-nginx
+    container_name: atomic.apache
+    volumes:
+      - .:/var/www/app/public
+    ports:
+      - "5100:8080"
